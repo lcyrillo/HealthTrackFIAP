@@ -1,0 +1,36 @@
+html, body{
+    background-image: url("../images/run.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html a:link, :visited, :hover{
+    color: white;
+}
+
+@font-face {font-family: Ubuntu; src: url('../fonts/Ubuntu-Regular.ttf'); }
+
+.center-absolute{
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: 12%;
+    padding: 0 auto;
+    color: white;
+    background-color: black;
+    opacity: 0.95;
+    border-radius: 10px;
+}
+
+.container{
+    text-align: center;
+    padding: 8px;
+}
+
+.btn-login{
+    text-align: center;
+}
+
+.social{
+    min-width: 200px;
+    width: 200px;
+}

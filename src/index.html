@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Health Track">
+        <meta name="author" content="Lucas Cyrillo">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo-index.css">
+        
+        <title>Health Track - Sua saúde em primeiro lugar</title>
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+          <ul class="nav navbar-nav ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg class="bi bi-person-circle" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                </svg>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="perfil.html">Editar Perfil
+                  <svg class="bi bi-person-lines-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </a>
+                <a class="dropdown-item" href="login.html">Encerrar Sessão 
+                  <svg class="bi bi-box-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.646 11.354a.5.5 0 0 1 0-.708L14.293 8l-2.647-2.646a.5.5 0 0 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                    <path fill-rule="evenodd" d="M2 13.5A1.5 1.5 0 0 1 .5 12V4A1.5 1.5 0 0 1 2 2.5h7A1.5 1.5 0 0 1 10.5 4v1.5a.5.5 0 0 1-1 0V4a.5.5 0 0 0-.5-.5H2a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-1.5a.5.5 0 0 1 1 0V12A1.5 1.5 0 0 1 9 13.5H2z"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <a class="navbar-brand" href="#">Health Track</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfil.html">Configurações</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Notificações <span class="badge badge-info float-right">2</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">nova atividade realizada<span class="badge badge-pill badge-danger">ver</span></a>
+                <a class="dropdown-item" href="#">parabéns você alcançou uma nova meta!<span class="badge badge-pill badge-danger">ver</span></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="atividades.html">Atividades</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Busca..." aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+      
+      <!--CONTENT-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <br>
+            <h2>Dashboard</h2>
+            <br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-xl-6 box">
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title card-border">Atividades Realizadas</h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text"><img src="images/pie-chart.png" width="450"></p>
+                <a href="atividades.html"><button type="button" class="btn btn-outline-primary">+ Infos</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-xl-6 box">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title card-border">Calorias x Atividades</h5>
+                <p class="card-text"><img src="images/chart-by-month.png" width="450"></p>
+                <a href="atividades-calorias.html"><button type="button" class="btn btn-outline-primary">+ Infos</button></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-xl-6 box">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title card-border">Cálculo do IMC</h5>
+
+                <table align="center">
+                  <tr>
+                    <td class="card-text">Peso:</td>
+                    <td class="card-text"><b class="peso">90</b></td>
+                    <td align="center"> Kg</td>
+                  </tr>
+                  <tr>
+                    <td class="card-text">Altura: </td>
+                    <td class="card-text"><b class="peso">1.85</b></td>
+                    <td align="center"> m </td>
+                  </tr>
+                  <tr>
+                    <td class="card-text">IMC: </td>
+                    <td class="card-text"><b class="peso">22.5</b></td>
+                    <td align="center"> Kg/m2</td>
+                  </tr>
+                </table>
+
+                
+                <p class="card-text"> <br> <span class="badge badge-success">Peso Ideal</span></p>
+                <a href="#" data-toggle="modal" data-target="#exampleModal"><button type="button" class="btn btn-outline-primary">Adicionar Peso</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Adicionar Novo Peso</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="color:black;">
+                  <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Peso">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-xl-6 box">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Últimas Atividades</h5>
+                <p class="card-text">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Atividade</th>
+                        <th scope="col">Tempo</th>
+                        <th scope="col">K/cal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">07/06</th>
+                        <td>Natação</td>
+                        <td>0:52</td>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">06/06</th>
+                        <td>Corrida</td>
+                        <td>0:30</td>
+                        <td>315.2</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">06/06</th>
+                        <td>Futebol</td>
+                        <td>0:15</td>
+                        <td>256</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">01/06</th>
+                        <td>Surf</td>
+                        <td>2:15</td>
+                        <td>960.3</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">30/05</th>
+                        <td>Judô</td>
+                        <td>1:50</td>
+                        <td>1100</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </p>
+                <a href="ultimas-atividades.html"><button type="button" class="btn btn-outline-primary">+ Infos</button></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <h2>Metas da semana</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <select class="form-control form-control-sm">
+                        <option>Basquete</option>
+                        <option>Corrida</option>
+                        <option>Futebol</option>
+                        <option>Natação</option>
+                      </select>
+                    </th>
+                    <th>
+                      <input type="time" id="filter-activitie">
+                    </th>
+                    <th>
+                      <input type="number" id="filter-cal">
+                    </th>
+                    <th>
+                      <button type="button" class="btn btn-outline-primary">Filtrar</button>
+                    </th>
+                    <th>
+                      
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Atividade</th>
+                    <th scope="col">Tempo</th>
+                    <th scope="col">K/cal</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                  
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Corrida <img src="images/run-icon.PNG"></th>
+                    <td>0:30</td>
+                    <td>8.61</td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalVisualizar"><button type="button" class="btn btn-primary">Visualizar</button></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalRemover"><button type="button" class="btn btn-danger">Remover</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Futebol <img src="images/football-icon.PNG"></th>
+                    <td>1:30</td>
+                    <td>5.84</td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalVisualizar"><button type="button" class="btn btn-primary">Visualizar</button></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalRemover"><button type="button" class="btn btn-danger">Remover</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Natação <img src="images/swim-icon.PNG"></th>
+                    <td>2:15</td>
+                    <td>8.84</td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalVisualizar"><button type="button" class="btn btn-primary">Visualizar</button></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalRemover"><button type="button" class="btn btn-danger">Remover</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Basquete  <img src="images/basket-icon.PNG"></th>
+                    <td>1:50</td>
+                    <td>6.92</td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalVisualizar"><button type="button" class="btn btn-primary">Visualizar</button></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#modalRemover"><button type="button" class="btn btn-danger">Remover</button></a></td>
+                  </tr>
+
+                  <tr>
+                    <th colspan="2" style="text-align: center;"><a href="#" data-toggle="modal" data-target="#modalAdd">Adicionar</a></th>
+                    <th colspan="3" style="text-align: center;"><a href="metas-semana.html">Ver Todas</a></th>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL-->
+        <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalAdd" style="color:black;"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="color:black;">
+                <table>
+                  <tr>
+                    <th>Atividade</th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <input type="text">
+                    </th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>Tempo</th>
+                    </tr>
+                    <th>
+                      <input type="text">
+                    </th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>K/cal</th>
+                    </tr>
+                    <th>
+                      <input type="text">
+                    </th>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Adicionar Atividade</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+
+
+        <!--MODAL-->
+        <div class="modal fade" id="modalVisualizar" tabindex="-1" role="dialog" aria-labelledby="modalVisualizar" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalVisualizar" style="color:black;"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="color:black;">
+                <table>
+                  <tr>
+                    <th>Atividade</th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <input type="text" disabled value="Corrida">
+                    </th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>Tempo</th>
+                    </tr>
+                    <th>
+                      <input type="text" disabled value="0:30">
+                    </th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>K/cal</th>
+                    </tr>
+                    <th>
+                      <input type="text" disabled value="8.61">
+                    </th>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+
+        <!--MODAL-->
+        <div class="modal fade" id="modalRemover" tabindex="-1" role="dialog" aria-labelledby="modalRemover" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalRemover" style="color:black;"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="color:black;">
+                <p>Deseja realmente remover?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sim</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+
+     </div>
+      <!--FIM CONTENT-->
+
+      <footer id="footer" class="sticky-bottom">
+        <div class="container-fluid">
+          &copy; <span class="navbar-brand" href="#">Health Track</span>
+        </div>
+      </footer>
+
+      <!--js-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+    </body>
+    
+</html>

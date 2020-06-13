@@ -1,0 +1,116 @@
+body{
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    background-color: #dae4f0;
+}
+
+.container-fluid{
+    max-width: 85%;
+    margin-top: 2%;
+}
+
+.left-side-menu{
+    width:260px;
+    z-index: 10;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    padding-top: 70px;
+    background-color: #000;
+}
+
+.logo{
+    padding-left: 70px;
+    color: #fff;
+    font-size: x-large;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a:link{
+    color: #8391a2;
+
+}
+
+.menu ul li a:hover{
+    color: #a8bacf;
+}
+
+.navbar-custom{
+    padding: 15px 24px;
+    background-color: rgb(255, 255, 255);
+    min-height: 70px;
+    position: fixed;
+    left: 260px;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    border-bottom: #e2e3e6 1px solid;
+}
+
+
+.navbar-custom ul li{
+    margin-right: 20px;
+}
+
+.nav-center{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-right{
+    float: right;
+    margin:0 auto;
+}
+
+.level{
+    font-size:12px;
+}
+
+.content-body{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 300px;
+    
+}
+
+.content{
+    min-height: 500pt;
+}
+
+.peso{
+    font-size: 40pt;
+}
+
+.card-text{
+    text-align: center;
+    padding: 5 5 5 5;
+}
+
+.card-border{
+    border-bottom: #a8bacf 1px solid;
+}
+
+.box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#footer{
+    margin-top: 50px;
+    background-color: rgb(67, 67, 68);
+    color:  #dae4f0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.card-body{
+    min-height: 450px;
+}
+
+.card-body-perfil{
+    min-height: 300px;
+    padding: 10px;
+}
